@@ -1,41 +1,100 @@
-/* Aula inicial :D */
+/* Imersão CSS - Alura */
 
+/* Soft-Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da Página */
 body {
-  background-image: 
-  url(https://www.significadofacil.com/wp-content/uploads/2019/07/background-1000x500.jpg);
+  background-image:  url('../img/fundo_credito_moldtranscom.jpg');
   background-size: auto 100vh;
   font-family: Arial;
   height: 100vh;
+  font-size: 12px;
 }
 
+/* Configuração de Tamanho de Página de acordo com o Dispositivo */
+/* Se a Tela tever pelo Menos 400px, vai Carregar estes Estilos */
+/* Breakpoint*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+/* Breakpoint*/
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+/* Breakpoint*/
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+/* Configuração Altura do Header */
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Configurações dos Menus */
 .menu {
-background-color: white;
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu ul {
-display: flex;
-justify-content: space-around; 
+  display: flex;
+  justify-content: space-around; 
 }
 
 .menu li {
-list-style: none; 
+  list-style: none; 
 }
 
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  background-color: cornflowerblue;
+}
+
+/* Configurções dos Links dos Menus */
 a {
-color: red;
-text-decoration: none;
+  color: blue;
+  text-decoration: none;
 }
 
 a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
+/* Configurações de Título e Sub-Título */
 .site-subtitle,
 .site-title {
-text-align: center;
-color: #ff6633;
+  text-align: center;
+  color: #021a5a;
+}
+
+.site-title {
+  font-size: 4em;
 }
 
 .site-subtitle {
-font-style: italic;
+  font-style: italic;
+}
+
+/* Configurações Imagens Menu Portfolio */
+.img-portfolio {
+  height: 180px;
+  width: 180px;
 }
