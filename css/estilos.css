@@ -47,10 +47,11 @@ header {
 
 /* Configurações dos Menus */
 .menu {
-  background-color: rgb(111, 155, 236);
+  background-color: cornflowerblue;
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1;
 }
 
 .menu ul {
@@ -65,10 +66,17 @@ header {
 .menu a {
   display: block;
   padding: 10px 20px;
-  background-color: cornflowerblue;
+  /*background-color: cornflowerblue;*/
+  transition: background-color 5s, color 2s;
 }
 
-/* Configurções dos Links dos Menus */
+.menu a:active, 
+.menu a:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+/* Configurações dos Links dos Menus */
 a {
   color: blue;
   text-decoration: none;
@@ -76,6 +84,19 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.titulo {
+  transform: scale(0.2) translate(50vh);
+  opacity: 0;
+  animation: linear 2s animeTitulo forwards;
+}
+
+@keyframes animeTitulo {
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Configurações de Título e Sub-Título */
@@ -96,11 +117,14 @@ a:hover {
   line-height: 1.6em;
 }
 
-/* Configurações Estudos */
+/* Configurações Estudos e Contatos */
+.contato,
 .estudos {
   padding: 2em;
   height: 100vh;
 }
+
+.contato,
 .estudos h2 {
   font-family: 'Oxygen', sans-serif;
   color: rgb(16, 6, 107);
@@ -139,6 +163,11 @@ a:hover {
   object-fit: cover;
   object-position: bottom;
   /*border-radius: 50%;*/
+  transform: transform 500ms;
+}
+
+.img-estudos:hover {
+  transform: scale(1.1) rotate(1deg);
 }
 
 /* @media (min-width: 1200px) {
@@ -147,3 +176,19 @@ a:hover {
     width: 240px;
   }
 } */
+
+/* Configurações Imagens Menu Contatos */
+.contato .icons {
+  text-align: center;
+}
+.contato a {
+  color: cornflowerblue;
+  font-size: 1em;
+  transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, .5);
+}
