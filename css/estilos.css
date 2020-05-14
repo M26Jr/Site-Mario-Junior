@@ -11,7 +11,7 @@
 body {
   background-image:  url('../img/fundo_credito_moldtranscom.jpg');
   background-size: auto 100vh;
-  font-family: Arial;
+  font-family: 'Roboto', sans-serif;
   height: 100vh;
   font-size: 12px;
 }
@@ -47,7 +47,7 @@ header {
 
 /* Configurações dos Menus */
 .menu {
-  background-color: white;
+  background-color: rgb(111, 155, 236);
   position: fixed;
   width: 100vw;
   top: 0;
@@ -82,19 +82,68 @@ a:hover {
 .site-subtitle,
 .site-title {
   text-align: center;
-  color: #021a5a;
+  color: #011241;
 }
 
 .site-title {
   font-size: 4em;
+  font-family: 'Anton', sans-serif;
 }
 
 .site-subtitle {
   font-style: italic;
+  font-family: 'Oxygen', sans-serif;
+  line-height: 1.6em;
 }
 
-/* Configurações Imagens Menu Portfolio */
-.img-portfolio {
-  height: 180px;
-  width: 180px;
+/* Configurações Estudos */
+.estudos {
+  padding: 2em;
+  height: 100vh;
 }
+.estudos h2 {
+  font-family: 'Oxygen', sans-serif;
+  color: rgb(16, 6, 107);
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.estudos .grid {
+  display: grid;
+  gap: 1em;
+}
+
+@media (min-width: 560px) {
+  .estudos .grid {
+    grid-template-columns: 240px 240px;
+  }
+} 
+
+@media (min-width: 880px) {
+  .estudos .grid {
+    grid-template-columns: repeat(3, 240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 48px - 8em);
+  }
+}
+
+.estudos figure {
+  text-align: center;
+}
+
+/* Configurações Imagens Menu Estudos */
+.img-estudos {
+  height: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: bottom;
+  /*border-radius: 50%;*/
+}
+
+/* @media (min-width: 1200px) {
+  .img-estudos {
+    height: 180px;
+    width: 240px;
+  }
+} */
