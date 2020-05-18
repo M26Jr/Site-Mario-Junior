@@ -1,71 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Junior</title>
-    <link rel="stylesheet" href="css\estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oxygen&family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mario Junior</title>
+      <link rel="stylesheet" href="css\estilos.css">
+      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oxygen&family=Roboto&display=swap" rel="stylesheet">
+      <script 
+        src="https://kit.fontawesome.com/45d765dfd0.js" crossorigin="anonymous">
+      </script>
+  </head>
+
+  <!-- Corpo e Título da Página -->
+  <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#estudos">Estudos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="titulo">
-            <h1 class="site-title">Mario Junior</h1>
-            <h2 class="site-subtitle">Student and Curious</h2>
-            <h2 class="site-subtitle">Agregando Conhecimentos Profissionais</h2>
-        </div>
+      <nav class="menu">
+        <ul class="container">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#estudos">Estudos</a></li>
+          <li><a href="#contato">Contatos</a></li>
+        </ul>
+      </nav>
+      <div class="titulo">
+        <h1 class="site-title">Mario Junior</h1>
+        <h2 class="site-subtitle">Student and Curious</h2>
+        <h2 class="site-subtitle">Agregando Conhecimentos Profissionais</h2>
+      </div>
     </header>
 
-    <section class="estudos" id="estudos">
-        <h2>Estudos</h2>
-        <div class="grid">
-        <figure>
-          <img class="img-estudos" src="./img/ecommerce_credito_pcworldcommx.jpg" alt="Redes">
-          <figcaption>Redes</figcaption>
+    <!-- Sessão Sobre -->
+    <section class="sobre container" id="sobre">
+      <h2>Sobre</h2>
+        <figure class="avatar">
+          <img src="./img/avatar_credito_arquivopessoal.jpg" alt="Mario Junior">
         </figure>
-        <figure>
-          <img class="img-estudos" src="./img/mobile_credito_blogtecjumpcombr.jpg" alt="Gestao">
-          <figcaption>Gestão TI</figcaption>
-        </figure>
-        <figure>
-          <img class="img-estudos" src="./img/webdesign_credito_depositphotos.jpg" alt="Comportamental">
-          <figcaption>Comportamental</figcaption>
-        </figure>
-        <figure>
-          <img class="img-estudos" src="./img/pessoal_credito_MITEnergyInitiative.jpg" alt="Diversos">
-          <figcaption>Diversos</figcaption>
-        </figure>
-        <figure>
-          <img class="img-estudos" src="./img/pessoal_credito_MITEnergyInitiative.jpg" alt="Etc.">
-          <figcaption>Etc.</figcaption>
-        </figure>
-        </div>
-      </section>
+          <p>
+            Debitis, perspiciatis. Sapiente sed illo tenetur temporibus eaque architecto enim nihil odio, et ut tempora beatae ullam perferendis, veritatis corrupti quas amet.
+            At placeat, fugiat molestias vel blanditiis assumenda excepturi doloremque quo, nobis, error beatae totam enim odio eum a. Dolore corrupti sequi deleniti?
+            Commodi nemo a in omnis iure consectetur ad id ipsa, delectus nam assumenda harum possimus animi quidem similique quae fugiat, quasi reiciendis?
+            Voluptate fugiat corporis omnis. Voluptatibus eaque reiciendis molestiae officiis vero deleniti incidunt non nisi sapiente atque, quis earum, placeat nulla cumque saepe.
+          </p>
+          <p>
+            Impedit unde rerum, accusantium totam eveniet explicabo et sed vitae vel. Non assumenda voluptates adipisci sint. Minima harum voluptas quisquam iste nostrum.
+            Praesentium optio, numquam labore modi amet odit laudantium magnam quae reiciendis commodi exercitationem consectetur illum similique reprehenderit corrupti deleniti odio unde! Porro!
+            Nobis dolore voluptas vitae placeat cupiditate corporis excepturi doloribus minus quam, sit beatae nisi, sequi saepe voluptates quae obcaecati ratione laborum distinctio!
+            Tempore, odit. Minus asperiores ipsum consectetur illum, magnam cumque perferendis architecto neque iure doloremque dolorem iste facere sint, ullam voluptas nesciunt pariatur!
+          </p>
+          <p>
+            Este Site foi construido durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
+          </p>
+    </section>
 
-      <section class="contato" id="contato">
-        <h2>Contato</h2>
+    <!-- Sessão Estudos -->
+    <section class="estudos container" id="estudos">
+      <h2>Estudos</h2>
+        <div class="grid">
+          
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-estudos" src="./img/ecommerce_credito_pcworldcommx.jpg" alt="Redes">
+                <!-- <figcaption>Redes</figcaption> -->
+              </figure>
+              <div class="card-back">
+                <h3>Parte de Trás</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-estudos" src="./img/webdesign_credito_depositphotos.jpg" alt="Comportamental">
+                <!-- <figcaption>Comportamental</figcaption> -->
+              </figure>
+              <div class="card-back">
+                <h3>Parte de Trás</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card"> 
+              <figure class="card-front">
+                <img class="img-estudos" src="./img/pessoal_credito_MITEnergyInitiative.jpg" alt="Diversos">
+                <!-- <figcaption>Diversos</figcaption> -->
+              </figure>
+              <div class="card-back">
+                <h3>Parte de Trás</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-estudos" src="./img/pessoal_credito_MITEnergyInitiative.jpg" alt="Etc.">
+                <!-- <figcaption>Etc.</figcaption> -->
+              </figure>
+              <div class="card-back">
+                <h3>Parte de Trás</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <!-- Sessão Contatos -->
+    <section class="contato container" id="contato">
+      <h2>Contatos</h2>
+
         <div class="grid icons">
-          <a target="_blank" href="https://github.com/M26Jr">
-            Github
+          <a target="_blank" href="https://linkedin.com/in/mario-junior-49170238/">
+            <i class="fab fa-linkedin-in"></i>
           </a>
           <a target="_blank" href="https://twitter.com/mario_M26">
-            Twitter
+            <i class="fab fa-twitter"></i>
           </a>
-          <!-- <a target="_blank" href="https://linkedin.com/in/vanessametonini">
-            Linkedin
-          </a> -->
           <a href="https://www.instagram.com/mario_m26/">
-            Instagram
+            <i class="fab fa-instagram"></i>
           </a>
+          <a target="_blank" href="https://github.com/M26Jr">
+            <i class="fab fa-github-alt"></i>
+          </a>
+          <a href="https://codepen.io/M26Jr">
+            <i class="fab fa-codepen"></i>
+          </a>
+          <!-- <a href="Email">
+            <i class="fas fa-envelope-square"></i>
+          </a> -->
         </div>
-      </section>
+    </section>
 
-</body>
+  </body>
 </html>
