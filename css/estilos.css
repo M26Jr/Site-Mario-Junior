@@ -245,7 +245,9 @@ a:hover {
 }
 
 .estudos h3 {
+  margin-left: 0.4em;
   font-family: 'Oxygen', sans-serif;
+  font-size: 0.6em;
   color: whitesmoke;
 }
 
@@ -272,6 +274,12 @@ a:hover {
 /*.img-estudos:hover {
   transform: scale(1.1) rotate(1deg);
 }*/ /* Retirado após colocação do Transform acima */
+
+.legendas {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.8em;
+  color: whitesmoke;
+}
 
 /* Configurações Imagens Menu Contatos */
 .contato .icons {
